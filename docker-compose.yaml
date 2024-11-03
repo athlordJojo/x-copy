@@ -3,4 +3,4 @@ services:
     image: athlord/x-copy
     volumes:
       - ./files.yaml:/x-copy/files.yaml
-      - ~/.aws:/.aws
+      - ~/.aws:/root/.aws
