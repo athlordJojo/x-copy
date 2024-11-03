@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 dirname="downloaded_files"
-
 delete_download_dir() {
     echo "Deleting $dirname"
     rm -rf $dirname
@@ -19,7 +18,7 @@ download_file() {
 }
 
 download_files() {
-  yq -r '.files[]' files.yaml | while read -r url; do
+  yq eval '.files[]' files.yaml | while read -r url; do
     download_file "$url"
   done
 }
