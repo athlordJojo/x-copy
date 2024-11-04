@@ -1,2 +1,4 @@
 files:
   - https://www.dropbox.com/xyc
+aws:
+  bucket: bucketname
