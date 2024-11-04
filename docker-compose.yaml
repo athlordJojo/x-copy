@@ -1,6 +1,6 @@
 services:
   x-copy:
-    image: athlord/x-copy:1.0.0
+    image: athlord/x-copy:1.0.1
     volumes:
       - ./files.yaml:/x-copy/files.yaml
       - ~/.aws:/root/.aws
